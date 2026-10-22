@@ -23,6 +23,8 @@ Agnes Aggregator — local-first OpenAI-compatible proxy for Agnes AI.
 - docs/decision-dictionary.md — recurring Q&A
 - docs/current-state.md — what has been done
 - docs/problems.md — known issues
+- data/keys.json — the key pool (gitignored, encrypted at rest). DO NOT read, print, or commit it.
+- MASTER_KEY in .env is mandatory; server refuses to start without a valid 64-hex value.
 
 ## Stop conditions
 If any invariant above would be violated, STOP and report — do not proceed.
