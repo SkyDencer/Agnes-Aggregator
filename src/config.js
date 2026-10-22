@@ -41,5 +41,11 @@ export function loadConfig() {
     apiBasePath: process.env.API_BASE_PATH ?? '/api/v1',
     agnesBaseUrl: process.env.AGNES_BASE_URL ?? 'https://apihub.agnes-ai.com/v1',
     agnesApiKey: process.env.AGNES_API_KEY ?? '',
+    // Phase 1 additions
+    masterKey: process.env.MASTER_KEY ?? '',
+    keysFile: process.env.KEYS_FILE ?? './data/keys.json',
+    cooldownSeconds: Number(process.env.COOLDOWN_SECONDS ?? 60),
+    maxConsecutiveFailures: Number(process.env.MAX_CONSECUTIVE_FAILURES ?? 3),
+    upstreamTimeoutMs: Number(process.env.UPSTREAM_TIMEOUT_MS ?? 60000),
   };
 }
