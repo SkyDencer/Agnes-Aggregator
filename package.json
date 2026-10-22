@@ -1,0 +1,18 @@
+{
+  "name": "agnes-aggregator",
+  "version": "0.1.0",
+  "description": "Local-first OpenAI-compatible API aggregator with multi-key rotation for Agnes AI",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/",
+    "build": "echo 'no build step (plain JS)'",
+    "lint": "echo 'no linter configured yet'"
+  },
+  "keywords": ["agnes", "openai-compatible", "api-proxy", "key-rotation"],
+  "license": "MIT",
+  "dependencies": {}
+}
